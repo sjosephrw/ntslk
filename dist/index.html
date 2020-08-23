@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="NEO TEC SOLUTIONS. Elevators and Escalators Installation, Maintenance and Repairs, Elevators, Escalators, Parking Systems, Scissor Lift, Dumbwaiter, Freight, Home, Bed, Passenger, Colombo, Sri Lanka"
+    />
+    <meta name="keywords" content="NEO TEC SOLUTIONS. Elevators and Escalators Installation, Maintenance and Repairs, Elevators, Escalators, Parking Systems, Scissor Lift, Dumbwaiter, Freight, Home, Bed, Passenger, Colombo, Sri Lanka" />
+    <meta name="author" content="Joseph W" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0062e7" />
+    <meta name="apple-mobile-web-app-status-bar" content="#0062e7" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32-dunplab-manifest-7122.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-dunplab-manifest-7122.png" />
+    <link rel="manifest" href="/site.manifest.json" />    
+    
+    <!--https://stackoverflow.com/questions/49690006/font-awesome-5-why-css-content-is-not-showing-->
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Caveat&family=Rajdhani:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/styles.css" rel="stylesheet" />
+    <!--https://dummyimage.com/400x400/dbdbdb/adaeb8-->
+    <title>Neo Tec Solutions Pvt. Ltd. - Elevators and Escalators Installation, Maintenance and Repairs.</title>
+  </head>
+  <body>
+    <style>
+      .section-features h3 {
+        font-size: 300% !important;
+      }
+    </style>
+    
+    <!-- https://stackoverflow.com/questions/121203/how-to-detect-if-javascript-is-disabled -->
+    <noscript>
+      <style type="text/css">
+        .noscriptmsg {
+          width: 100%;
+          padding: 10px 20px;
+          color: red;
+        }
+      </style>
+      <div class="noscriptmsg">
+        You don't have javascript enabled. Please enable JavaScript.
+      </div>
+    </noscript>    
+    
+    <header>
+      <div class="msg"></div>
+      <nav>
+        <span class="logo">
+          <a href="/">
+            NeoTec
+          </a>
+        </span>
+        <span class="menu-toggle __js-menu-toggle">
+          <a href="#">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times menu-close"></i>
+          </a>
+        </span>
+        <div class="clearfix"></div>
+      </nav>
+      <div class="drawer">
+        <div class="menu-box">
+          <div class="menu-box-inner">
+            <ul class="menu">
+              <li>
+                <a href="#" class="toggle-submenu"
+                  >PRODUCTS&nbsp;&nbsp;<i class="fas fa-plus"></i
+                ></a>
+                <ul class="menu-products">
+                  <li><a href="/products">PRODUCT 1</a></li>
+                  <li><a href="/products">PRODUCT 1</a></li>
+                  <li><a href="/products">PRODUCT 1</a></li>
+                  <li><a href="/roducts">PRODUCT 1</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/projects">PROJECTS</a>
+              </li>
+              <li><a href="/services">SERVICES</a></li>
+              <li><a href="/about">ABOUT US</a></li>
+              <li><a href="/contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="app"></div>
+
+
+    <footer class="section-padding text-center">
+      <ul class="social">
+        <li>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+      <p>&copy;&nbsp;2020, designed and developed by Joseph Wimalasuriya.</p>
+    </footer>
+    <script src="/main.js"></script>
+  </body>
+</html>
+<script>
+  console.log("IT WORKS");
+
+  const el = {
+    menu: document.querySelector(".drawer"),
+    bars: document.querySelector(".fa-bars"),
+    close: document.querySelector(".menu-close"),
+    toggleMenu: document.querySelector(".__js-menu-toggle"),
+    subMenu1: document.querySelector(".menu-products")
+  };
+
+  const init = () => {
+    el.bars.classList.remove("hide");
+    el.bars.classList.add("show");
+
+    el.close.classList.remove("show");
+    el.close.classList.add("hide");
+
+    el.menu.classList.remove("show");
+    el.menu.classList.add("hide");
+
+    el.subMenu1.classList.remove("show");
+    el.subMenu1.classList.add("hide");
+  };
+
+  const menuActive = () => {
+    el.bars.classList.remove("show");
+    el.bars.classList.add("hide");
+
+    el.close.classList.remove("hide");
+    el.close.classList.add("show");
+
+    el.menu.classList.remove("hide");
+    el.menu.classList.add("show");
+  };
+
+  const menuInActive = () => {
+    el.bars.classList.remove("hide");
+    el.bars.classList.add("show");
+
+    el.close.classList.remove("show");
+    el.close.classList.add("hide");
+
+    el.menu.classList.remove("show");
+    el.menu.classList.add("hide");
+  };
+
+  init();
+
+  el.toggleMenu.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (el.bars.classList.contains("show")) {
+      menuActive();
+    } else {
+      menuInActive();
+    }
+  });
+
+  el.menu.addEventListener("click", (e) => {
+    //e.preventDefault();
+    if (e.target.classList.contains("toggle-submenu")) {
+      const parent = e.target.parentNode;
+      const submenu = parent.childNodes[3];
+
+      //console.log(submenu, parent);
+      if (submenu.classList.contains("show")) {
+        submenu.classList.remove("show");
+        submenu.classList.add("hide");
+      } else if (submenu.classList.contains("hide")) {
+        submenu.classList.remove("hide");
+        submenu.classList.add("show");
+      }
+    } else if (e.target.classList.contains("fa-plus")) {
+      const parent = e.target.parentNode.parentNode;
+      const submenu = parent.childNodes[3];
+
+      //console.log(submenu, parent);
+      if (submenu.classList.contains("show")) {
+        submenu.classList.remove("show");
+        submenu.classList.add("hide");
+      } else if (submenu.classList.contains("hide")) {
+        submenu.classList.remove("hide");
+        submenu.classList.add("show");
+      }
+    }
+  });
+</script>
