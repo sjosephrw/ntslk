@@ -1,5 +1,5 @@
 const config = {
-  baseUrlAPI: "https://qk6xg.sse.codesandbox.io"
+  baseUrlAPI: "https://ntslk.tk/backend"
 };
 
 export default config;

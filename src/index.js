@@ -158,3 +158,89 @@ router
     }
   })
   .resolve();
+  
+  console.log("IT WORKS");
+
+  const el = {
+    menu: document.querySelector(".drawer"),
+    bars: document.querySelector(".fa-bars"),
+    close: document.querySelector(".menu-close"),
+    toggleMenu: document.querySelector(".__js-menu-toggle"),
+    subMenu1: document.querySelector(".menu-products")
+  };
+
+  const init = () => {
+    el.bars.classList.remove("hide");
+    el.bars.classList.add("show");
+
+    el.close.classList.remove("show");
+    el.close.classList.add("hide");
+
+    el.menu.classList.remove("show");
+    el.menu.classList.add("hide");
+
+    el.subMenu1.classList.remove("show");
+    el.subMenu1.classList.add("hide");
+  };
+
+  const menuActive = () => {
+    el.bars.classList.remove("show");
+    el.bars.classList.add("hide");
+
+    el.close.classList.remove("hide");
+    el.close.classList.add("show");
+
+    el.menu.classList.remove("hide");
+    el.menu.classList.add("show");
+  };
+
+  const menuInActive = () => {
+    el.bars.classList.remove("hide");
+    el.bars.classList.add("show");
+
+    el.close.classList.remove("show");
+    el.close.classList.add("hide");
+
+    el.menu.classList.remove("show");
+    el.menu.classList.add("hide");
+  };
+
+  init();
+
+  el.toggleMenu.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (el.bars.classList.contains("show")) {
+      menuActive();
+    } else {
+      menuInActive();
+    }
+  });
+
+  el.menu.addEventListener("click", (e) => {
+    //e.preventDefault();
+    if (e.target.classList.contains("toggle-submenu")) {
+      const parent = e.target.parentNode;
+      const submenu = parent.childNodes[3];
+
+      //console.log(submenu, parent);
+      if (submenu.classList.contains("show")) {
+        submenu.classList.remove("show");
+        submenu.classList.add("hide");
+      } else if (submenu.classList.contains("hide")) {
+        submenu.classList.remove("hide");
+        submenu.classList.add("show");
+      }
+    } else if (e.target.classList.contains("fa-plus")) {
+      const parent = e.target.parentNode.parentNode;
+      const submenu = parent.childNodes[3];
+
+      //console.log(submenu, parent);
+      if (submenu.classList.contains("show")) {
+        submenu.classList.remove("show");
+        submenu.classList.add("hide");
+      } else if (submenu.classList.contains("hide")) {
+        submenu.classList.remove("hide");
+        submenu.classList.add("show");
+      }
+    }
+  });  

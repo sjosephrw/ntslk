@@ -1,0 +1,9 @@
+https://www.digitalocean.com/community/tutorials/how-to-install-go-on-debian-10
+
+https://www.cloudbooklet.com/how-to-install-go-on-debian-10/
+
+https://golang.org/doc/install
+
+https://linuxize.com/post/how-to-install-go-on-ubuntu-20-04/
+
+https://stackabuse.com/how-to-permanently-set-path-in-linux/

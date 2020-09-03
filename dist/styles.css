@@ -283,7 +283,7 @@ nav a {
 
 .logo {
   float: left;
-  width: 20%;
+  width: 90%;
   font-size: 150%;
 }
 
@@ -360,10 +360,10 @@ nav a {
 
 .menu-toggle {
   float: right;
-  width: 80%;
+  width: 10%;
   text-align: right;
   font-size: 150%;
-  margin-top: 5px;
+  margin-top: 7.5px;
 }
 
 .drawer {
@@ -1207,7 +1207,8 @@ textarea {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 650px) {
   .logo {
-    width: 10%;
+    width: 90%;
+    font-size: 100%;
   }
 
   /* .menu {

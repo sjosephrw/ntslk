@@ -60,6 +60,9 @@ https://www.youtube.com/watch?v=oykl1Ih9pMg&t=15s
 
 https://www.youtube.com/watch?v=hQWRp-FdTpc&t=3s
 
+//28 min video
+https://www.youtube.com/watch?v=QcnAqN_Ihqk
+
 https://medium.com/@JSantaCL/nginx-nodejs-and-spas-cc50c376b131
 
 https://futurestud.io/tutorials/nginx-how-to-serve-a-static-html-page
@@ -123,7 +126,25 @@ https://github.com/react-boilerplate/react-boilerplate/issues/1480
 //ssl certificate for nginx static website
 https://medium.com/@jgefroh/a-guide-to-using-nginx-for-static-websites-d96a9d034940
 
-//commands
-chown -R www-data:www-data /var/www/html/neotec.dev
+//unlink enabled folder
+https://stackoverflow.com/questions/19215641/remove-default-nginx-welcome-page-when-access-directly-from-ip-address
 
-cp -Rv dist /usr/share/nginx/html
+//delete from sites-enabled
+https://futurestud.io/tutorials/nginx-remove-an-app-domain-from-sites-enabled
+
+//commands
+chown -R www-data:www-data /var/www/html/neotec1.dev
+
+cp -Rv dist /var/www/html
+
+//digital ocean ssh
+Digitalocean - How to create vps or droplet and add public ssh key
+https://www.youtube.com/watch?v=YYC0HSLSLjA
+
+https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
+https://stackoverflow.com/a/61853542/6033723
+
+https://stackoverflow.com/questions/60249177/e-the-repository-http-ppa-launchpad-net-certbot-certbot-ubuntu-focal-release
+
+
+https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04

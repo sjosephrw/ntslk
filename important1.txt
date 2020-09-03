@@ -1,0 +1,18 @@
+https://linuxize.com/post/how-to-remove-files-and-directories-using-linux-command-line/
+
+https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/#pass
+
+https://www.digitalocean.com/community/tutorials/how-to-configure-logging-and-log-rotation-in-nginx-on-an-ubuntu-vps
+
+https://www.scaleway.com/en/docs/how-to-configure-nginx-reverse-proxy/#:~:text=Nginx%20HTTPS%20Reverse%20Proxy%20Overview,response%20back%20to%20the%20client.
+
+https://www.digitalocean.com/community/tutorials/how-to-install-go-on-debian-10
+
+https://computingforgeeks.com/how-to-create-locally-trusted-ssl-certificates-on-linux-and-macos-with-mkcert/
+
+https://www.prado.lt/how-to-create-locally-trusted-ssl-certificates-in-local-development-environment-on-linux-with-mkcert
+
+https://github.com/FiloSottile/mkcert/releases
+
+//uninstall root-CA.pem
+https://github.com/FiloSottile/mkcert/issues/208

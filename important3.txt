@@ -1,0 +1,22 @@
+sudo apt install libnss3-tools
+
+export VER="v1.4.1"
+
+wget -O mkcert https://github.com/FiloSottile/mkcert/releases/download/${VER}/mkcert-${VER}-linux-amd64
+
+chmod +x mkcert
+
+sudo mv mkcert /usr/local/bin
+
+mkcert --help
+
+mkcert -CAROOT
+
+mkcert -install
+
+mkcert neotec.dev localhost 127.0.0.1 ::1
+
+sudo unlink neotec.dev.conf
+
+sudo ln -s /etc/nginx/sites-available/neotec.dev.conf /etc/nginx/sites-enabled/
+
